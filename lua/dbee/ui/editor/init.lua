@@ -257,6 +257,11 @@ end
 ---@return note_id
 function EditorUI:namespace_create_note(id, name)
     local namespace = id
+    print("Creating namespace note")
+    print("id")
+    print(id)
+    print("name")
+    print(name)
     if not namespace or namespace == "" then
         error("invalid namespace id")
     end
@@ -276,6 +281,8 @@ function EditorUI:namespace_create_note(id, name)
     end
 
     local file = self:dir(namespace) .. "/" .. name
+    print("file")
+    print(file)
     local note_id = utils.random_string()
     ---@type note_details
     local s = {
