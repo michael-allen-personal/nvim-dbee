@@ -283,7 +283,7 @@ function EditorUI:namespace_create_note(id, name)
         name = name,
         file = file,
     }
-    error("namespace:" .. namespace .. "\nnote_id:" .. note_id .. "\nname:" .. name .. "\nfile:" .. file)
+    -- error("namespace:" .. namespace .. "\nnote_id:" .. note_id .. "\nname:" .. name .. "\nfile:" .. file)
 
     self.notes[namespace] = self.notes[namespace] or {}
     self.notes[namespace][note_id] = s
