@@ -257,6 +257,7 @@ end
 ---@return note_id
 function EditorUI:namespace_create_note(id, name)
     local namespace = id
+    error("WHYTHEFUCK")
     print("Creating namespace note")
     print("id")
     print(id)
